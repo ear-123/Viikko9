@@ -33,7 +33,7 @@ public class AddUserActivity extends AppCompatActivity {
         EditText tvlastName = findViewById(R.id.editLastName);
         EditText tvemail = findViewById(R.id.editEmail);
 
-        String firstName = String.valueOf(tvfirstName.getText());
+        String firsstName = String.valueOf(tvfirstName.getText());
         String lastName = String.valueOf(tvlastName.getText());
         String email = String.valueOf(tvemail.getText());
 
@@ -42,11 +42,11 @@ public class AddUserActivity extends AppCompatActivity {
         RadioButton choice = findViewById(degreeOption.getCheckedRadioButtonId());
 
         String degree = String.valueOf(choice.getText());
-        Log.d("test", firstName);
+        Log.d("test", firsstName);
         Log.d("test", lastName);
         Log.d("test", email);
         Log.d("test", degree);
-        UserStorage.getInstance().addUser(new User(firstName, lastName, email, degree));
+        UserStorage.getInstance().addUser(new User(firsstName, lastName, email, degree));
         Log.d("test", String.valueOf(UserStorage.getInstance().getUsers().size()));
 
 
