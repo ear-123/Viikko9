@@ -7,22 +7,22 @@ public class UserStorage {
     private static UserStorage userStorage = null;
     private ArrayList<User> users = new ArrayList<User>();
 
-    private UserStorage(){
+    private UserStorage() {
 
     }
 
-    public static UserStorage getInstance(){
-        if(userStorage == null){
+    public static UserStorage getInstance() {
+        if (userStorage == null) {
             userStorage = new UserStorage();
         }
         return userStorage;
     }
 
-    public ArrayList<User> getUsers(){
+    public ArrayList<User> getUsers() {
         return users;
     }
 
-    public void addUser(User user){
+    public void addUser(User user) {
         users.add(user);
     }
 

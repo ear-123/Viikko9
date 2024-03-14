@@ -24,12 +24,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void swichToAddUser(View view){
+    public void switchToAddUser(View view){
         Intent intent = new Intent(this, AddUserActivity.class);
         startActivity(intent);
     }
-    public void swichToListUsers(View view){
-        Intent intent = new Intent(this, ListUsersActivity.class);
+    public void switchToListUsers(View view){
+        Intent intent = new Intent(this, ListUsersInRecycleViewActivity.class);
         startActivity(intent);
     }
 }
