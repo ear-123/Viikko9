@@ -43,8 +43,13 @@ public class AddUserActivity extends AppCompatActivity {
         RadioButton choice = findViewById(degreeOption.getCheckedRadioButtonId());
 
         String degree = String.valueOf(choice.getText());
-        //Log.d("test", degree);
+        Log.d("test", firstName);
+        Log.d("test", lastName);
+        Log.d("test", email);
+        Log.d("test", degree);
         UserStorage.getInstance().addUser(new User(firstName, lastName, email, degree));
+        Log.d("test", String.valueOf(UserStorage.getInstance().getUsers().size()));
+
 
     }
 
