@@ -1,6 +1,7 @@
 package com.example.viikko9;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -27,7 +28,8 @@ public class AddUserActivity extends AppCompatActivity {
         });
     }
 
-    private void addUser(View view){
+    public void addUser(View view){
+        //Log.d("test", "addUser: 1");
         EditText tvfirstName = findViewById(R.id.editFirstName);
         EditText tvlastName = findViewById(R.id.editLastName);
         EditText tvemail = findViewById(R.id.editEmail);
@@ -41,8 +43,10 @@ public class AddUserActivity extends AppCompatActivity {
         RadioButton choice = findViewById(degreeOption.getCheckedRadioButtonId());
 
         String degree = String.valueOf(choice.getText());
-
+        //Log.d("test", degree);
         UserStorage.getInstance().addUser(new User(firstName, lastName, email, degree));
-        System.out.println(degree);
+
     }
+
+
 }
