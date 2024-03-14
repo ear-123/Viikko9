@@ -16,13 +16,10 @@
             android:name=".UserViewHolder"
             android:exported="false" />
         <activity
-            android:name=".ListUsersInRecycleViewActivity"
+            android:name=".ListUserInRecycleViewActivity"
             android:exported="false" />
         <activity
             android:name=".AddUserActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ListUsersActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
