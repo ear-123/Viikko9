@@ -41,7 +41,7 @@ public class AddUserActivity extends AppCompatActivity {
 
         String degree = String.valueOf(choice.getText());
 
-
         UserStorage.getInstance().addUser(new User(firstName, lastName, email, degree));
+        System.out.println(degree);
     }
 }
