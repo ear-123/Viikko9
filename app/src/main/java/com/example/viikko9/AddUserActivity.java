@@ -38,7 +38,7 @@ public class AddUserActivity extends AppCompatActivity {
         String lastName = String.valueOf(tvlastName.getText());
         String email = String.valueOf(tvemail.getText());
 
-        RadioGroup degreeOption = findViewById(R.id.radioDergreeProgram);
+        RadioGroup degreeOption = findViewById(R.id.radioDegreeProgram);
 
         RadioButton choice = findViewById(degreeOption.getCheckedRadioButtonId());
 
